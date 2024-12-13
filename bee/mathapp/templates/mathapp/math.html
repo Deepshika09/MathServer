@@ -1,3 +1,4 @@
+math.html
 <html>
     <head>
         <style>
@@ -21,6 +22,7 @@
         
         <div class="formelt" allign="center"><h1>POWER OF LAMP.</h1> </div>
         <form method="POST" allign="center">
+            {% csrf_token %}
             <div class="container" allign="center">
              Intensity: <input type="text" name="intensity" value={{i}}></input>m<sup>2</sup><br/>
 
@@ -40,4 +42,3 @@
     </body>
     
 </html>
-
